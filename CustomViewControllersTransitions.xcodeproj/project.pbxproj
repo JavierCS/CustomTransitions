@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		B20D06A5249A76900072C82E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20D06A4249A76900072C82E /* AppDelegate.swift */; };
 		B20D06A7249A76900072C82E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20D06A6249A76900072C82E /* SceneDelegate.swift */; };
-		B20D06A9249A76900072C82E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20D06A8249A76900072C82E /* ViewController.swift */; };
 		B20D06AC249A76900072C82E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20D06AA249A76900072C82E /* Main.storyboard */; };
 		B20D06AE249A76920072C82E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20D06AD249A76920072C82E /* Assets.xcassets */; };
 		B20D06B1249A76920072C82E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20D06AF249A76920072C82E /* LaunchScreen.storyboard */; };
+		B277A6FE249AD911007457FF /* FirstAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A6FD249AD911007457FF /* FirstAnimationViewController.swift */; };
+		B277A702249ADA68007457FF /* FirstAnimationTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A701249ADA68007457FF /* FirstAnimationTransitioningDelegate.swift */; };
+		B277A704249ADAFA007457FF /* FirstAnimationAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A703249ADAFA007457FF /* FirstAnimationAnimatedTransitioning.swift */; };
+		B277A708249AE144007457FF /* FirstAnimationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A706249AE144007457FF /* FirstAnimationDetailViewController.swift */; };
+		B277A709249AE144007457FF /* FirstAnimationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B277A707249AE144007457FF /* FirstAnimationDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B20D06A1249A76900072C82E /* CustomViewControllersTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewControllersTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20D06A4249A76900072C82E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B20D06A6249A76900072C82E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B20D06A8249A76900072C82E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B20D06AB249A76900072C82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B20D06AD249A76920072C82E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20D06B0249A76920072C82E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B20D06B2249A76920072C82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B277A6FD249AD911007457FF /* FirstAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAnimationViewController.swift; sourceTree = "<group>"; };
+		B277A701249ADA68007457FF /* FirstAnimationTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAnimationTransitioningDelegate.swift; sourceTree = "<group>"; };
+		B277A703249ADAFA007457FF /* FirstAnimationAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAnimationAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		B277A706249AE144007457FF /* FirstAnimationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAnimationDetailViewController.swift; sourceTree = "<group>"; };
+		B277A707249AE144007457FF /* FirstAnimationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstAnimationDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		B20D06A3249A76900072C82E /* CustomViewControllersTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				B277A6FF249ADA30007457FF /* Animations */,
+				B277A6FC249AD8F4007457FF /* TabBarControllers */,
 				B20D06A4249A76900072C82E /* AppDelegate.swift */,
 				B20D06A6249A76900072C82E /* SceneDelegate.swift */,
-				B20D06A8249A76900072C82E /* ViewController.swift */,
 				B20D06AA249A76900072C82E /* Main.storyboard */,
 				B20D06AD249A76920072C82E /* Assets.xcassets */,
 				B20D06AF249A76920072C82E /* LaunchScreen.storyboard */,
 				B20D06B2249A76920072C82E /* Info.plist */,
 			);
 			path = CustomViewControllersTransitions;
+			sourceTree = "<group>";
+		};
+		B277A6FC249AD8F4007457FF /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B277A6FD249AD911007457FF /* FirstAnimationViewController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		B277A6FF249ADA30007457FF /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B277A700249ADA38007457FF /* FirstAnimation */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		B277A700249ADA38007457FF /* FirstAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B277A705249AE114007457FF /* DetailViewController */,
+				B277A701249ADA68007457FF /* FirstAnimationTransitioningDelegate.swift */,
+				B277A703249ADAFA007457FF /* FirstAnimationAnimatedTransitioning.swift */,
+			);
+			path = FirstAnimation;
+			sourceTree = "<group>";
+		};
+		B277A705249AE114007457FF /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B277A706249AE144007457FF /* FirstAnimationDetailViewController.swift */,
+				B277A707249AE144007457FF /* FirstAnimationDetailViewController.xib */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20D06B1249A76920072C82E /* LaunchScreen.storyboard in Resources */,
+				B277A709249AE144007457FF /* FirstAnimationDetailViewController.xib in Resources */,
 				B20D06AE249A76920072C82E /* Assets.xcassets in Resources */,
 				B20D06AC249A76900072C82E /* Main.storyboard in Resources */,
 			);
@@ -138,8 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20D06A9249A76900072C82E /* ViewController.swift in Sources */,
+				B277A702249ADA68007457FF /* FirstAnimationTransitioningDelegate.swift in Sources */,
 				B20D06A5249A76900072C82E /* AppDelegate.swift in Sources */,
+				B277A704249ADAFA007457FF /* FirstAnimationAnimatedTransitioning.swift in Sources */,
+				B277A708249AE144007457FF /* FirstAnimationDetailViewController.swift in Sources */,
+				B277A6FE249AD911007457FF /* FirstAnimationViewController.swift in Sources */,
 				B20D06A7249A76900072C82E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
